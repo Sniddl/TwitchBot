@@ -1,0 +1,14 @@
+{
+  "name": "twitchbot",
+  "version": "1.0.0",
+  "description": "A bot that is for Twitch.",
+  "main": "index.js",
+  "author": "Optimus and Zeb",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.4.5"
+  },
+  "scripts": {
+    "start": "electron main.js"
+  }
+}
