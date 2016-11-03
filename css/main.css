@@ -1,0 +1,92 @@
+nav.navbar.navbar-dark.bg-inverse {
+    border-radius: 0;
+}.bg-inverse {
+  background-color: #21252b !important;
+}.navbar-dark .navbar-toggler {
+    text-align: center;
+    border-color: #e0e0e0;
+    line-height: 22px;
+    color: #e0e0e0;
+}
+
+.app-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 56px;
+    z-index: -1;
+}
+
+h5 {
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 100;
+    width: 100%;
+}
+
+.app-col {
+    border: solid;
+    color: #e0e0e0;
+    padding: 10px;
+    height: 100%;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.01);
+}
+.navbar-toggler {
+  cursor: pointer;
+}
+body {
+  background: #49494c
+}
+
+div.menu {
+    left: 0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    height: calc(100vh - 56px);
+    background: #21252b;
+    width: 250px;
+}
+
+.dropdown-item:hover {
+    color: #2b2d2f;
+    text-decoration: none;
+    background-color: #4a4a4a;
+}
+
+.nav-link {
+  color: darkgrey;
+}.nav-link:hover{
+  color: white;
+}
+
+.column-content {
+    width: auto;
+    background: #787c82;
+    position: absolute;
+    top: 42px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.68);
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.message {
+    font-size: 13px;
+    border: solid;
+    border-width: 1px 0px 1px 0px;
+    padding: 3px 10px;
+}.message:nth-of-type(even){
+  background-color: rgba(0, 0, 0, 0.11);
+}span.time {
+    font-size: 8px;
+    color: #adadad;
+}span.username {
+    font-weight: 500;
+    color: aqua;
+    margin-right: 5px;
+}
