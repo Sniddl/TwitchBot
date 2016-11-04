@@ -1,5 +1,5 @@
 {
-  "name": "twitchbot",
+  "name": "CloudBot",
   "version": "1.0.0",
   "description": "A bot that is for Twitch.",
   "main": "index.js",

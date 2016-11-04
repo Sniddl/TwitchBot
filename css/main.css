@@ -125,3 +125,30 @@ div.menu {
     font-size: 13px;
     line-height: 19px;
 }
+.chat-box {
+  padding-left: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  background-color: #787c82;
+  border-color: transparent;
+  color: white;
+}
+.chat-box:focus {
+  outline: none;
+}
+input,
+button {
+  background-color: #787c82;
+  color: white;
+  border-color: transparent;
+  margin-left: -5px;
+}
+input,
+button:hover {
+  cursor: pointer;
+}
+input,
+button:focus {
+  outline: none;
+}
