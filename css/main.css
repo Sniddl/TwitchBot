@@ -7,13 +7,16 @@ nav.navbar.navbar-dark.bg-inverse {
     border-color: #e0e0e0;
     line-height: 22px;
     color: #e0e0e0;
+}.titlebar {
+    -webkit-app-region: drag;
+    height: 20px;
+    background: linear-gradient(#ffffff, #e4e4e4);
 }
-
 .app-wrapper {
     position: absolute;
     width: 100%;
     bottom: 0;
-    top: 56px;
+    top: 76px;
     z-index: -1;
 }
 
@@ -45,7 +48,7 @@ div.menu {
     margin: 0;
     padding: 0;
     z-index: 999;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 76px);
     background: #21252b;
     width: 250px;
 }
@@ -89,4 +92,36 @@ div.menu {
     font-weight: 500;
     color: aqua;
     margin-right: 5px;
+}
+.buttons {
+    position: absolute;
+    right: 9px;
+    top: 0;
+    z-index: 10;
+}
+.frame-btn {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 100%;
+    cursor: pointer !important;
+    opacity: .7;
+    background-color: #858585;
+}.frame-btn:hover {
+  opacity: 1;
+}
+.frame-close:hover {
+  background-color: #fb615b;
+}.frame-minimize:hover {
+  background-color: #fdbd41;
+}.frame-maximize:hover {
+  background-color: #33c749;
+}
+.titlebar-title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 19px;
 }

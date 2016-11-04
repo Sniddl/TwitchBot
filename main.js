@@ -231,12 +231,15 @@ if (process.platform === 'win32') {
   addUpdateMenuItems(helpMenu, 0)
 }
 
+
+
 app.on('ready', function () {
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
   let win = new BrowserWindow({
     width:1280,
-    height:720
+    height:720,
+    frame: false
   })
   win.loadURL(`file://${__dirname}/index.html`)
 })
@@ -247,8 +250,7 @@ app.on('browser-window-created', function () {
 })
 
 app.on('window-all-closed', function () {
-  let reopenMenuItem = findReopenMenuItem()
-  if (reopenMenuItem) reopenMenuItem.enabled = true
+  app.quit()
 })
 
 
