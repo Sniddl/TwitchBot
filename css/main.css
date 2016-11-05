@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
 nav.navbar.navbar-dark.bg-inverse {
     border-radius: 0;
 }.bg-inverse {
@@ -154,4 +156,25 @@ button:hover {
 input,
 button:focus {
   outline: none;
+}
+.twitch-login {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: white;
+  margin-left: 18%;
+  margin-top: 15%;
+}
+.twitch-right-title {
+  margin-left: 6%;
+}
+.twitch-left-title {
+  margin-left: 3%;
+}
+.twitch-login-btn {
+  background-color: transparent;
+  margin-top: 10%;
+}
+.twitch-bg {
+  background-image: url('../img/login-bg.png');
 }
