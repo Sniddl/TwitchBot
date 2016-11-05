@@ -239,7 +239,8 @@ app.on('ready', function () {
   let win = new BrowserWindow({
     width:1280,
     height:720,
-    frame: true
+    frame: true,
+    resizable: false
   })
   win.loadURL(`file://${__dirname}/index.html`)
 })

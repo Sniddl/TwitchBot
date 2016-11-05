@@ -15,6 +15,7 @@ nav.navbar.navbar-dark.bg-inverse {
 .app-wrapper {
     position: absolute;
     width: 100%;
+    height: 82%;
     bottom: 0;
     top: 76px;
     z-index: -1;
@@ -125,11 +126,13 @@ div.menu {
     font-size: 13px;
     line-height: 19px;
 }
+.box-wrapper {
+  margin-bottom: 10px;
+}
 .chat-box {
   padding-left: 5px;
   margin-left: 10px;
-  margin-bottom: 10px;
-  width: 60%;
+  width: 61%;
   background-color: #787c82;
   border-color: transparent;
   color: white;
