@@ -169,12 +169,22 @@ button:focus {
   margin-left: 6%;
 }
 .twitch-left-title {
-  margin-left: 3%;
+  margin-left: 4%;
 }
 .twitch-login-btn {
   background-color: transparent;
   margin-top: 10%;
 }
+.twitch-login-btn:focus {
+  background-color: transparent;
+}
 .twitch-bg {
   background-image: url('../img/login-bg.png');
+}
+.sign-out {
+  color: #5f3aad;
+}
+#signout:hover {
+  color: #56349C;
+  text-decoration: none;
 }

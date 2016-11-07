@@ -1,7 +1,7 @@
 {
-  "name": "CloudBot",
+  "name": "Twitchie",
   "version": "1.0.0",
-  "description": "A bot that is for Twitch.",
+  "description": "Cloud base Twitch bot",
   "main": "index.js",
   "author": "Optimus and Zeb",
   "license": "MIT",

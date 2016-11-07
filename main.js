@@ -1,10 +1,6 @@
 const electron = require('electron')
 const {app, BrowserWindow, Menu} = electron
 
-
-
-
-
 let template = [{
   label: 'Edit',
   submenu: [{
@@ -240,6 +236,7 @@ app.on('ready', function () {
     width:1280,
     height:720,
     frame: true,
+    icon: __dirname + '/img/twitchie.ico',
     resizable: false
   })
   win.loadURL(`file://${__dirname}/index.html`)
