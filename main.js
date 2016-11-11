@@ -1,5 +1,8 @@
 const electron = require('electron')
+const {session} = require('electron')
 const {app, BrowserWindow, Menu} = electron
+
+app.commandLine.appendSwitch('disable-http-cache')
 
 let template = [{
   label: 'Edit',
@@ -230,6 +233,26 @@ if (process.platform === 'win32') {
 
 
 app.on('ready', function () {
+
+  // Clear cache on browser ready
+  var deleteChromeCache = function() {
+      var chromeCacheDir = path.join(app.getPath('userData'), 'Cache');
+      if(fs.existsSync(chromeCacheDir)) {
+          var files = fs.readdirSync(chromeCacheDir);
+          for(var i=0; i<files.length; i++) {
+              var filename = path.join(chromeCacheDir, files[i]);
+              if(fs.existsSync(filename)) {
+                  try {
+                      fs.unlinkSync(filename);
+                  }
+                  catch(e) {
+                      console.log(e);
+                  }
+              }
+          }
+      }
+  }
+
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
   let win = new BrowserWindow({
